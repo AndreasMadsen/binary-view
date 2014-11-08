@@ -35,6 +35,7 @@ test('multibyte order', function(t) {
   t.equal(bview(new Uint8Array( [1, 2])), '00000001 00000010');
   t.equal(bview(new Uint16Array([259 ])), '00000001 00000011');
   t.equal(bview(new Int16Array([2])), '00000000 00000010');
+  t.equal(bview(new Int16Array([1, 2])), '00000000 00000001 00000000 00000010');
 
   t.equal(bview(new Int8Array(  [-1, -1])), '11111111 11111111');
   t.equal(bview(new Int16Array( [-1    ])), '11111111 11111111');

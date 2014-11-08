@@ -16,7 +16,7 @@ in a binary format.
 ```JavaScript
   var bview = require('binary-view');
 
-  console.log(bview(new Int16Array([2]))); // "00000000 00000010"
+  console.log(bview(new Int16Array([1, 2])) // '00000000 00000001 00000000 00000010'
 ```
 
 The module assumes that the underlying byte data is stored in as little endian,
