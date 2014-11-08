@@ -1,0 +1,24 @@
+{
+  "name": "binary-view",
+  "description": "Return a pretty binary print of a typed array",
+  "version": "0.2.0",
+  "author": "Andreas Madsen <amwebdk@gmail.com>",
+  "main": "./binary-view.js",
+  "scripts": {
+    "test": "tap test.js"
+  },
+  "repository" : {
+    "type": "git",
+    "url": "git://github.com/AndreasMadsen/binary-view.git"
+  },
+  "keywords": [
+    "binary",
+    "typed-array",
+    "string",
+    "view"
+  ],
+  "devDependencies": {
+    "tap": "0.4.x"
+  },
+  "license": "MIT"
+}
