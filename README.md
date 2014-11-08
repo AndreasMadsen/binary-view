@@ -19,7 +19,7 @@ in a binary format.
   console.log(bview(new Int16Array([1, 2])) // '00000000 00000001 00000000 00000010'
 ```
 
-The module assumes that the underlying byte data is stored in as little endian,
+The module assumes that the underlying byte data is stored as little endian,
 which is by far the most common and used by all Intel processors. However the
 output string is in big endian, since this is the network byte order and in
 my opinion the most readable (by humans).
